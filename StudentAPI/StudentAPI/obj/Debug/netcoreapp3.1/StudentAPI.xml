@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StudentAPI</name>
+    </assembly>
+    <members>
+        <member name="M:StudentAPI.Controllers.StudentsController.Get">
+            <summary>
+            Returns All Students
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:StudentAPI.Controllers.StudentsController.Get(System.Int32)">
+            <summary>
+             Returns a specific Student
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:StudentAPI.Controllers.StudentsController.Post(StudentAPI.Models.Student)">
+             <summary>
+             Creates a Student
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Students
+                 {
+                    "id": 1,
+                    "name": "Student name",
+                    "lastname": "Student lastname"
+                 }
+            
+             </remarks>
+             <param name="student"></param>
+             <response code="200">Returns the newly created student</response>
+             <response code="400">If something wrong</response>  
+        </member>
+        <member name="M:StudentAPI.Controllers.StudentsController.Put(StudentAPI.Models.Student)">
+            <summary>
+            Updates already existed Student
+            </summary>
+            <param name="student"></param>
+        </member>
+        <member name="M:StudentAPI.Controllers.StudentsController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Student
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
